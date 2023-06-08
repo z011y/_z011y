@@ -1,0 +1,107 @@
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 66vh;
+}
+
+.p {
+  padding: 1.5rem;
+}
+
+.px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.p-lg {
+  padding: var(--s4);
+}
+
+.bg-bg {
+  background-color: var(--bg-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-absolute {
+  background-color: var(--absolute-bg-color);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.h-2 {
+  height: 2rem;
+}
+
+.h-4 {
+  height: 4rem;
+}
+
+.w-2 {
+  width: 2rem;
+}
+
+.w-4 {
+  height: 4rem;
+}
+
+.w-third {
+  width: 33%;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.clickable {
+  transition: all 0.2s ease-in-out;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.arch {
+  border-radius: 100% 100% 5% 5%;
+  overflow: hidden;
+}
+
+.mono {
+  font-family: var(--font-family-mono);
+  text-transform: uppercase;
+}
+
+.font-sm {
+  font-size: 12px;
+}
+
+.glisten {
+  background-color: var(--border-color);
+  animation: 0.5s infinite alternate glisten;
+}
+
+@keyframes glisten {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

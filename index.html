@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/z011y.png" sizes="48x48" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z011y</title>
+    <script>
+      (() => {
+        const getInitialTheme = () => {
+          const cachedTheme = localStorage.getItem('theme') ?? '';
+          const systemThemeMatchable = window.matchMedia(
+            '(prefers-color-scheme: dark)'
+          );
+
+          if (['light', 'dark'].includes(cachedTheme)) return cachedTheme;
+          if (systemThemeMatchable.matches) return 'dark';
+          return 'light';
+        };
+
+        document.documentElement.setAttribute('data-theme', getInitialTheme());
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"><!--ssr-outlet--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
+  </body>
+</html>
