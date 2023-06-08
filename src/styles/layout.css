@@ -49,6 +49,7 @@
 .flow {
   display: flex;
   gap: var(--s1);
+  align-items: center;
 }
 
 .grid {

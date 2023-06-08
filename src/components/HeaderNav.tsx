@@ -10,8 +10,14 @@ function Nav() {
         <Logo />
       </div>
       <div className="flow">
+        <p style={{ fontFamily: 'var(--mono)', fontSize: '12px' }}>v0.00</p>
         <ThemeToggle />
-        <a href="https://github.com/z011y" target="_blank" className="a-icon">
+        <a
+          href="https://github.com/z011y"
+          target="_blank"
+          className="a-icon"
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
           <GithubLogo />
         </a>
       </div>
